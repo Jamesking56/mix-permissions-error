@@ -18,6 +18,6 @@ jobs:
       - name: Test
         run: touch public/mix-manifest.json
       - name: Test
-        run: chmod 777 public/mix-manifest.json
+        run: ls -aln 
       - name: Build Frontend Assets
         run: npm run production
