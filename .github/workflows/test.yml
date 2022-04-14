@@ -16,9 +16,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@v1
-      - name: Test
-        run: touch public/mix-manifest.json
-      - name: Test
-        run: ls -aln 
       - name: Build Frontend Assets
         run: npm run production
